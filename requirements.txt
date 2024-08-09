@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+gunicorn
+asyncpg
+alembic
+sqlalchemy
+environs
+greenlet
+black
