@@ -1,5 +1,6 @@
-from pydantic import BaseModel
 from datetime import datetime
+
+from pydantic import BaseModel
 
 
 class Videos(BaseModel):
@@ -11,5 +12,3 @@ class Videos(BaseModel):
     name_video: str
     date_creation: datetime
     status: str
-
-

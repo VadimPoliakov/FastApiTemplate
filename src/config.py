@@ -1,6 +1,8 @@
 import logging
 from pathlib import Path
 
+from environs import Env
+
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
@@ -8,8 +10,6 @@ logging.basicConfig(
 )
 
 basedir = Path(__file__).resolve().parent.parent
-
-from environs import Env
 
 env = Env()
 env.read_env(f"{basedir}/vault/env")

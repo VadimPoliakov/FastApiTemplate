@@ -1,4 +1,4 @@
-from fastapi import APIRouter, Response, Depends, HTTPException
+from fastapi import APIRouter, Depends, HTTPException, Response
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 
@@ -8,6 +8,7 @@ from src.app_name.schemas import Videos
 from src.database import get_async_session
 
 appname = APIRouter()
+
 
 @appname.get("/healthcheck_appname", tags=["healthcheck"])
 async def healthcheck():

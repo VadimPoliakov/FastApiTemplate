@@ -6,4 +6,4 @@ alembic
 sqlalchemy
 environs
 greenlet
-black
+pre-commit

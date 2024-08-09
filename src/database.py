@@ -1,8 +1,10 @@
 from typing import AsyncGenerator
+
 from sqlalchemy.ext.asyncio import AsyncSession, create_async_engine
-from sqlalchemy.orm import sessionmaker, DeclarativeBase
+from sqlalchemy.orm import DeclarativeBase, sessionmaker
 
 from src.config import env
+
 
 SQLALCHEMY_DATABASE_URL = (
     f'postgresql+asyncpg://{env("POSTGRES_USER")}:'
